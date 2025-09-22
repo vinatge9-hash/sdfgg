@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Menu — Niyantri Coffee</title>
+  <meta name='description' content='Explore the menu at Niyantri Coffee: coffees, lattes, and pastry delights.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='opacity-0 transition-opacity duration-700'>
+  <script>document.addEventListener('DOMContentLoaded', ()=>{document.body.classList.remove('opacity-0'); document.body.classList.add('opacity-100');});</script>
+  <header class='absolute w-full z-50'>
+    <input id='nav-toggle' type='checkbox' class='peer sr-only'>
+    <label for='nav-toggle' class='md:hidden inline-flex items-center p-2 rounded-md bg-black/20 text-white hover:bg-black/30 transition-all duration-300'>
+      <span class='block w-6 h-0.5 bg-white mb-1'></span>
+      <span class='block w-6 h-0.5 bg-white'></span>
+    </label>
+    <nav class='hidden peer-checked:block md:block absolute md:static bg-black/20 w-full md:w-auto left-0 top-0 md:bg-transparent'>
+      <ul class='md:flex md:space-x-6 p-4 md:p-0'>
+        <li><a href='index.html' class='block px-3 py-2 rounded transition-all duration-300 ease-in-out text-white hover:bg-white/20'>Home</a></li>
+        <li><a href='about.html' class='block px-3 py-2 rounded transition-all duration-300 ease-in-out text-white hover:bg-white/20'>About</a></li>
+        <li><a href='menu.html' class='block px-3 py-2 rounded transition-all duration-300 ease-in-out text-white hover:bg-white/20'>Menu</a></li>
+        <li><a href='reservations.html' class='block px-3 py-2 rounded transition-all duration-300 ease-in-out text-white hover:bg-white/20'>Reservations</a></li>
+        <li><a href='contact.html' class='block px-3 py-2 rounded transition-all duration-300 ease-in-out text-white hover:bg-white/20'>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class='min-h-screen flex items-center justify-center bg-gray-50'>
+      <div class='max-w-6xl px-6 py-16'>
+        <h1 class='text-4xl font-bold text-gray-800'>Menu</h1>
+        <p class='mt-2 text-gray-600'>Here are some of our favorites. Each item is crafted with care, from bean to cup.</p>
+        <div class='mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <!-- Coffee items -->
+          <div class='bg-white rounded-lg shadow hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-4'>
+            <h3 class='font-semibold'>Espresso</h3>
+            <p class='text-sm text-gray-600'>Rich and clean, 1 shot of perfection.</p>
+            <p class='mt-2 font-semibold'>₹160</p>
+            <img src="https://images.unsplash.com/photo-1733338638542-45e79232a3df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwyfHxjbG9zZS11cCUyMHNob3QlMjBvZiUyMGVzcHJlc3NvJTIwYXJ0fGVufDB8MHx8fDE3NTg1MTk4OTl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Espresso' class='w-full mt-2 rounded' />
+          </div>
+          <div class='bg-white rounded-lg shadow hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-4'>
+            <h3 class='font-semibold'>Cappuccino</h3>
+            <p class='text-sm text-gray-600'>Foamy crown, velvety texture.</p>
+            <p class='mt-2 font-semibold'>₹180</p>
+            <img src='https://images.pexels.com/photos/3310817/pexels-photo-3310817.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Cappuccino' class='w-full mt-2 rounded'>
+          </div>
+          <div class='bg-white rounded-lg shadow hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-4'>
+            <h3 class='font-semibold'>Cold Brew</h3>
+            <p class='text-sm text-gray-600'>Smooth, refreshing, low acidity.</p>
+            <p class='mt-2 font-semibold'>₹170</p>
+            <img src='https://images.pexels.com/photos/7282737/pexels-photo-7282737.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Cold Brew' class='w-full mt-2 rounded'>
+          </div>
+        </div>
+        <div class='mt-6 grid grid-cols-1 md:grid-cols-2 gap-6'>
+          <div class='bg-white rounded-lg shadow hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-4'>
+            <h3 class='font-semibold'>Mango Pastry</h3>
+            <p class='text-sm text-gray-600'>A sweet bite to accompany your coffee.</p>
+          </div>
+          <div class='bg-white rounded-lg shadow hover:shadow-xl hover:scale-[1.03] transition-all duration-300 p-4'>
+            <h3 class='font-semibold'>Blueberry Muffin</h3>
+            <p class='text-sm text-gray-600'>Buttery crumb with juicy berries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-white'>
+    <div class='max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <section aria-label='Brand'>
+        <h3 class='text-xl font-semibold'>Niyantri Coffee</h3>
+        <p class='mt-2 text-sm text-gray-300'>Cozy sips, crafted with care.</p>
+      </section>
+      <section aria-label='Links'>
+        <h4 class='text-lg font-semibold'>Quick Links</h4>
+        <ul class='mt-2 space-y-2'>
+          <li><a href='index.html' class='transition-all duration-300 ease-in-out hover:underline'>Home</a></li>
+          <li><a href='about.html' class='transition-all duration-300 ease-in-out hover:underline'>About</a></li>
+          <li><a href='menu.html' class='transition-all duration-300 ease-in-out hover:underline'>Menu</a></li>
+          <li><a href='reservations.html' class='transition-all duration-300 ease-in-out hover:underline'>Reservations</a></li>
+          <li><a href='contact.html' class='transition-all duration-300 ease-in-out hover:underline'>Contact</a></li>
+        </ul>
+      </section>
+      <section aria-label='Newsletter'>
+        <h4 class='text-lg font-semibold'>Newsletter</h4>
+        <form class='mt-2'>
+          <label class='sr-only' for='email'>Email</label>
+          <input id='email' type='email' placeholder='Your email' class='w-full px-3 py-2 rounded border border-white bg-white/20 text-white placeholder-white'>
+          <button type='submit' class='mt-2 w-full py-2 rounded bg-amber-500 text-white transition-all duration-300'>Subscribe</button>
+        </form>
+      </section>
+    </div>
+    <hr class='border-gray-700'>
+    <p class='text-center py-4 text-sm text-gray-400'>© 2025 Niyantri Coffee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const obs = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; } }); }, { threshold: 0.1 });
+    sections.forEach(s => { s.style.opacity='0'; s.style.transform='translateY(20px)'; s.style.transition='all 600ms ease-in-out'; obs.observe(s); });
+  </script>
+</body>
+</html>
